@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <libnotify/notify.h>
 
-int main() {
+int main(void) {
     const char NOTIFICATION_TITLE[] = "Posture Reminder";
     const char NOTIFICATION_MESSAGE[] = "This is a reminder to fix your posture!";
 
