@@ -8,12 +8,13 @@ builddir := build
 execfile := PostureReminder
 
 run: compile
-	$(builddir)/$(execfile)
+	./$(execfile)
 
 build:
 	meson setup $(builddir)
 
 compile: build
 	CC=gcc CC_LD=mold meson compile -C $(builddir)
+	cp $(builddir)/$(execfile) .
 
 # end
